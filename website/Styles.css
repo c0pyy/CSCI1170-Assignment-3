@@ -1,0 +1,268 @@
+
+
+
+
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  background-color: rgb(170, 166, 166);
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+  background-color: #ffffff;
+}
+
+nav li a.active {
+  color: rgb(240, 240, 240);
+  background-color: #04AA6D;
+}
+
+ul.a {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+img {
+  border-radius: 8px;
+}
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table {
+  border: 1px solid;
+}
+
+a:link {
+  color: black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label, input {
+  margin: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #030303;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(0, 0, 0);
+}
+
+.flex-container > div {
+  background-color: #0e0d0d;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* For tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  img {
+    width: 50%;
+    height: auto;
+  }
+}
+/* For mobile devices */
+@media (max-width: 480px) {
+  video,
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* For tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  video,
+  iframe {
+    width: 50%;
+    height: auto;
+  }
+}
+/* For mobile devices */
+@media (max-width: 480px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item {
+    width: 100%;
+  }
+}
+
+/* For tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .flex-item {
+    width: 50%;
+  }
+}
+/* For mobile devices */
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    width: 100%;
+  }
+}
+
+/* For tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav li {
+    width: auto;
+  }
+}
+.hero {
+  background-image: url('images/backgroundgif.gif');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #fff;
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+
+.city-skyline-img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: -2;
+}
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  text-align: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
